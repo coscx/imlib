@@ -1,3 +1,0 @@
-include ':imlib'
-include ':app'
-rootProject.name = "imimlib"
