@@ -1,0 +1,207 @@
+com/beetle/bauhinia/gallery/ui/GalleryGridUI.java
+ com.beetle.bauhinia.gallery.ui.GalleryGridUI
+ com.beetle.bauhinia.gallery.ui.GalleryGridUI$1
+com/beetle/bauhinia/db/message/Readed.java
+ com.beetle.bauhinia.db.message.Readed
+com/beetle/bauhinia/db/ConversationIterator.java
+ com.beetle.bauhinia.db.ConversationIterator
+com/beetle/bauhinia/db/ICustomerMessage.java
+ com.beetle.bauhinia.db.ICustomerMessage
+com/beetle/bauhinia/db/message/GroupNotification.java
+ com.beetle.bauhinia.db.message.GroupNotification
+com/beetle/bauhinia/activity/BaseActivity.java
+ com.beetle.bauhinia.activity.BaseActivity
+com/beetle/bauhinia/toolbar/Contact.java
+ com.beetle.bauhinia.toolbar.Contact
+ com.beetle.bauhinia.toolbar.Contact$1
+ com.beetle.bauhinia.toolbar.Contact$2
+com/beetle/bauhinia/toolbar/emoticon/EmoticonAdapter.java
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonAdapter
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonAdapter$1
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonAdapter$BaseViewHolder
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonAdapter$OnItemClickListener
+com/beetle/bauhinia/gallery/ui/PhotoActionPopup.java
+ com.beetle.bauhinia.gallery.ui.PhotoActionPopup
+ com.beetle.bauhinia.gallery.ui.PhotoActionPopup$1
+ com.beetle.bauhinia.gallery.ui.PhotoActionPopup$2
+ com.beetle.bauhinia.gallery.ui.PhotoActionPopup$ChoiceListItem
+ com.beetle.bauhinia.gallery.ui.PhotoActionPopup$Listener
+com/beetle/bauhinia/view/MessageLinkView.java
+ com.beetle.bauhinia.view.MessageLinkView
+com/beetle/bauhinia/toolbar/EaseChatPrimaryMenu.java
+ com.beetle.bauhinia.toolbar.EaseChatPrimaryMenu
+com/beetle/bauhinia/view/MessageVOIPView.java
+ com.beetle.bauhinia.view.MessageVOIPView
+com/beetle/bauhinia/db/IMessageDB.java
+ com.beetle.bauhinia.db.IMessageDB
+com/beetle/bauhinia/view/MessageUnknownView.java
+ com.beetle.bauhinia.view.MessageUnknownView
+com/beetle/bauhinia/db/MessageFlag.java
+ com.beetle.bauhinia.db.MessageFlag
+com/beetle/bauhinia/db/message/P2PSession.java
+ com.beetle.bauhinia.db.message.P2PSession
+com/beetle/bauhinia/view/MessageClassroomView.java
+ com.beetle.bauhinia.view.MessageClassroomView
+com/beetle/bauhinia/db/MessageIterator.java
+ com.beetle.bauhinia.db.MessageIterator
+com/beetle/bauhinia/db/message/Link.java
+ com.beetle.bauhinia.db.message.Link
+com/beetle/bauhinia/db/message/Headline.java
+ com.beetle.bauhinia.db.message.Headline
+com/beetle/bauhinia/db/message/Secret.java
+ com.beetle.bauhinia.db.message.Secret
+com/beetle/bauhinia/db/SQLGroupMessageDB.java
+ com.beetle.bauhinia.db.SQLGroupMessageDB
+ com.beetle.bauhinia.db.SQLGroupMessageDB$1
+ com.beetle.bauhinia.db.SQLGroupMessageDB$BackwarkGroupMessageIterator
+ com.beetle.bauhinia.db.SQLGroupMessageDB$ForwardGroupMessageIterator
+ com.beetle.bauhinia.db.SQLGroupMessageDB$GroupConversationIterator
+ com.beetle.bauhinia.db.SQLGroupMessageDB$GroupMessageIterator
+ com.beetle.bauhinia.db.SQLGroupMessageDB$MiddleGroupMessageIterator
+ com.beetle.bauhinia.db.SQLGroupMessageDB$TopicGroupMessageIterator
+com/beetle/bauhinia/db/message/Video.java
+ com.beetle.bauhinia.db.message.Video
+com/beetle/bauhinia/db/CustomerMessageDB.java
+ com.beetle.bauhinia.db.CustomerMessageDB
+com/beetle/bauhinia/db/message/Text.java
+ com.beetle.bauhinia.db.message.Text
+com/beetle/bauhinia/gallery/tool/DisplayUtils.java
+ com.beetle.bauhinia.gallery.tool.DisplayUtils
+com/beetle/bauhinia/db/message/TimeBase.java
+ com.beetle.bauhinia.db.message.TimeBase
+com/beetle/bauhinia/tools/DisplayUtils.java
+ com.beetle.bauhinia.tools.DisplayUtils
+com/beetle/bauhinia/gallery/view/ScrollViewPager.java
+ com.beetle.bauhinia.gallery.view.ScrollViewPager
+com/beetle/bauhinia/db/message/Location.java
+ com.beetle.bauhinia.db.message.Location
+com/beetle/bauhinia/view/MessageImageView.java
+ com.beetle.bauhinia.view.MessageImageView
+com/beetle/bauhinia/view/MessageFileView.java
+ com.beetle.bauhinia.view.MessageFileView
+com/beetle/bauhinia/db/message/File.java
+ com.beetle.bauhinia.db.message.File
+com/beetle/bauhinia/db/message/Image.java
+ com.beetle.bauhinia.db.message.Image
+com/beetle/bauhinia/view/MessageLocationView.java
+ com.beetle.bauhinia.view.MessageLocationView
+com/beetle/bauhinia/toolbar/EaseChatExtendMenu.java
+ com.beetle.bauhinia.toolbar.EaseChatExtendMenu
+ com.beetle.bauhinia.toolbar.EaseChatExtendMenu$ChatMenuItem
+ com.beetle.bauhinia.toolbar.EaseChatExtendMenu$ChatMenuItemModel
+ com.beetle.bauhinia.toolbar.EaseChatExtendMenu$EaseChatExtendMenuItemClickListener
+ com.beetle.bauhinia.toolbar.EaseChatExtendMenu$ItemAdapter
+ com.beetle.bauhinia.toolbar.EaseChatExtendMenu$ItemAdapter$1
+com/beetle/bauhinia/gallery/GalleryImage.java
+ com.beetle.bauhinia.gallery.GalleryImage
+ com.beetle.bauhinia.gallery.GalleryImage$1
+com/beetle/bauhinia/db/message/Classroom.java
+ com.beetle.bauhinia.db.message.Classroom
+com/beetle/bauhinia/gallery/tool/ImageUtils.java
+ com.beetle.bauhinia.gallery.tool.ImageUtils
+com/beetle/bauhinia/db/PeerMessageDB.java
+ com.beetle.bauhinia.db.PeerMessageDB
+com/beetle/bauhinia/db/EPeerMessageDB.java
+ com.beetle.bauhinia.db.EPeerMessageDB
+com/beetle/bauhinia/db/message/Attachment.java
+ com.beetle.bauhinia.db.message.Attachment
+com/beetle/bauhinia/toolbar/emoticon/ViewPagerAdapter.java
+ com.beetle.bauhinia.toolbar.emoticon.ViewPagerAdapter
+com/beetle/bauhinia/gallery/ui/GalleryAdapter.java
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$1
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$2
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$3
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$3$1
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$4
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$5
+ com.beetle.bauhinia.gallery.ui.GalleryAdapter$OnItemClickListener
+com/beetle/imlib/BuildConfig.java
+ com.beetle.imlib.BuildConfig
+com/beetle/bauhinia/toolbar/emoticon/EmoticonPanel.java
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonPanel
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonPanel$1
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonPanel$2
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonPanel$OnItemEmoticonClickListener
+com/beetle/bauhinia/db/message/GroupVOIP.java
+ com.beetle.bauhinia.db.message.GroupVOIP
+com/beetle/bauhinia/db/message/VOIP.java
+ com.beetle.bauhinia.db.message.VOIP
+com/beetle/bauhinia/gallery/ui/GalleryUI.java
+ com.beetle.bauhinia.gallery.ui.GalleryUI
+ com.beetle.bauhinia.gallery.ui.GalleryUI$1
+ com.beetle.bauhinia.gallery.ui.GalleryUI$2
+com/beetle/bauhinia/gallery/tool/Md5FileNameUtils.java
+ com.beetle.bauhinia.gallery.tool.Md5FileNameUtils
+com/beetle/bauhinia/gallery/tool/StorageUtils.java
+ com.beetle.bauhinia.gallery.tool.StorageUtils
+com/beetle/bauhinia/db/IMessage.java
+ com.beetle.bauhinia.db.IMessage
+com/beetle/bauhinia/db/SQLPeerMessageDB.java
+ com.beetle.bauhinia.db.SQLPeerMessageDB
+ com.beetle.bauhinia.db.SQLPeerMessageDB$1
+ com.beetle.bauhinia.db.SQLPeerMessageDB$BackwardPeerMessageInterator
+ com.beetle.bauhinia.db.SQLPeerMessageDB$ForwardPeerMessageInterator
+ com.beetle.bauhinia.db.SQLPeerMessageDB$MiddlePeerMessageInterator
+ com.beetle.bauhinia.db.SQLPeerMessageDB$PeerConversationIterator
+ com.beetle.bauhinia.db.SQLPeerMessageDB$PeerMessageIterator
+com/beetle/bauhinia/gallery/tool/FileUtils.java
+ com.beetle.bauhinia.gallery.tool.FileUtils
+com/beetle/bauhinia/gallery/tool/Closeables.java
+ com.beetle.bauhinia.gallery.tool.Closeables
+com/beetle/bauhinia/view/MessageTextView.java
+ com.beetle.bauhinia.view.MessageTextView
+ com.beetle.bauhinia.view.MessageTextView$1
+ com.beetle.bauhinia.view.MessageTextView$DoubleTapListener
+ com.beetle.bauhinia.view.MessageTextView$GestureListener
+com/beetle/bauhinia/view/MessageContentView.java
+ com.beetle.bauhinia.view.MessageContentView
+com/beetle/bauhinia/view/MessageNotificationView.java
+ com.beetle.bauhinia.view.MessageNotificationView
+com/beetle/bauhinia/db/SQLCustomerMessageDB.java
+ com.beetle.bauhinia.db.SQLCustomerMessageDB
+ com.beetle.bauhinia.db.SQLCustomerMessageDB$CustomerConversationIterator
+ com.beetle.bauhinia.db.SQLCustomerMessageDB$CustomerMessageIterator
+com/beetle/bauhinia/db/message/MessageContent.java
+ com.beetle.bauhinia.db.message.MessageContent
+ com.beetle.bauhinia.db.message.MessageContent$MessageType
+com/beetle/bauhinia/toolbar/EaseExpandRecylerView.java
+ com.beetle.bauhinia.toolbar.EaseExpandRecylerView
+com/beetle/bauhinia/db/GroupMessageDB.java
+ com.beetle.bauhinia.db.GroupMessageDB
+com/beetle/bauhinia/db/message/Revoke.java
+ com.beetle.bauhinia.db.message.Revoke
+com/beetle/bauhinia/toolbar/emoticon/Emoticon.java
+ com.beetle.bauhinia.toolbar.emoticon.Emoticon
+com/beetle/bauhinia/db/message/ACK.java
+ com.beetle.bauhinia.db.message.ACK
+com/beetle/bauhinia/view/MessageVideoView.java
+ com.beetle.bauhinia.view.MessageVideoView
+com/beetle/bauhinia/view/MessageAudioView.java
+ com.beetle.bauhinia.view.MessageAudioView
+ com.beetle.bauhinia.view.MessageAudioView$AudioHolder
+com/beetle/bauhinia/db/message/Notification.java
+ com.beetle.bauhinia.db.message.Notification
+com/beetle/bauhinia/toolbar/emoticon/EmoticonUtils.java
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonUtils
+com/beetle/bauhinia/db/message/Tag.java
+ com.beetle.bauhinia.db.message.Tag
+com/beetle/bauhinia/gallery/ui/GalleryGridAdapter.java
+ com.beetle.bauhinia.gallery.ui.GalleryGridAdapter
+ com.beetle.bauhinia.gallery.ui.GalleryGridAdapter$ViewHolder
+com/beetle/bauhinia/toolbar/emoticon/EmoticonManager.java
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonManager
+ com.beetle.bauhinia.toolbar.emoticon.EmoticonManager$InstanceContainer
+com/beetle/bauhinia/toolbar/EaseChatInputMenu.java
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$1
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$2
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$3
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$4
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$5
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$6
+ com.beetle.bauhinia.toolbar.EaseChatInputMenu$ChatInputMenuListener
+com/beetle/bauhinia/db/message/Audio.java
+ com.beetle.bauhinia.db.message.Audio
+com/beetle/bauhinia/db/message/Unknown.java
+ com.beetle.bauhinia.db.message.Unknown
