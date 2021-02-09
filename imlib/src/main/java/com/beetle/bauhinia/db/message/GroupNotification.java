@@ -109,6 +109,7 @@ public  class GroupNotification extends Notification {
                 JsonObject obj = element.getAsJsonObject("mute_member");
                 notification.groupID = obj.get("group_id").getAsLong();
                 notification.member = obj.get("member_id").getAsLong();
+                notification.timestamp = obj.get("timestamp").getAsInt();
                 notification.mute = obj.get("mute").getAsInt();
                 notification.notificationType = GroupNotification.NOTIFICATION_GROUP_MEMBER_MUTE;
             }
