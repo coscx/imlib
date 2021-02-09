@@ -14,7 +14,7 @@ public  class GroupNotification extends Notification {
     public static final int NOTIFICATION_GROUP_MEMBER_LEAVED = 4;//群成员离开
     public static final int NOTIFICATION_GROUP_NAME_UPDATED = 5;
     public static final int NOTIFICATION_GROUP_NOTICE_UPDATED = 6; //群公告
-
+    public static final int NOTIFICATION_GROUP_MEMBER_MUTE = 7; //群禁言
 
     public MessageType getType() {
         return MessageType.MESSAGE_GROUP_NOTIFICATION;
@@ -32,7 +32,7 @@ public  class GroupNotification extends Notification {
     public ArrayList<Long> members;
 
     public String notice;
-
+    public int mute;
     //NOTIFICATION_GROUP_MEMBER_LEAVED, NOTIFICATION_GROUP_MEMBER_ADDED
     public long member;
     public String memberName;
@@ -103,9 +103,14 @@ public  class GroupNotification extends Notification {
             } else if (element.has("update_notice")) {
                 JsonObject obj = element.getAsJsonObject("update_notice");
                 notification.groupID = obj.get("group_id").getAsLong();
-                notification.timestamp = obj.get("timestamp").getAsInt();
                 notification.notice = obj.get("notice").getAsString();
                 notification.notificationType = GroupNotification.NOTIFICATION_GROUP_NOTICE_UPDATED;
+            }else if (element.has("mute_member")) {
+                JsonObject obj = element.getAsJsonObject("mute_member");
+                notification.groupID = obj.get("group_id").getAsLong();
+                notification.member = obj.get("member_id").getAsLong();
+                notification.mute = obj.get("mute").getAsInt();
+                notification.notificationType = GroupNotification.NOTIFICATION_GROUP_MEMBER_MUTE;
             }
         } catch (Exception e) {
             e.printStackTrace();
