@@ -30,7 +30,25 @@ public class Image extends MessageContent {
         image.uuid = uuid;
         return image;
     }
+    private static Image newImage(String url, String thumb, int width, int height, String uuid) {
+        Image image = new Image();
 
+        JsonObject content = new JsonObject();
+        //兼容性
+        content.addProperty(IMAGE, thumb);
+        JsonObject obj = new JsonObject();
+        obj.addProperty("url", url);
+        obj.addProperty("width", width);
+        obj.addProperty("height", height);
+        content.add(IMAGE2, obj);
+        content.addProperty("uuid", uuid);
+        image.raw = content.toString();
+        image.url = url;
+        image.width = width;
+        image.height = height;
+        image.uuid = uuid;
+        return image;
+    }
     public static Image newImage(String url, int width, int height) {
         String uuid = UUID.randomUUID().toString();
         return newImage(url, width, height, uuid);
