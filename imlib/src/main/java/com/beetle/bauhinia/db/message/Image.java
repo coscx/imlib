@@ -5,6 +5,7 @@ import java.util.UUID;
 
 public class Image extends MessageContent {
     public String url;
+    public String thumb;
     public int width;
     public int height;
     public MessageType getType() {
@@ -44,6 +45,7 @@ public class Image extends MessageContent {
         content.addProperty("uuid", uuid);
         image.raw = content.toString();
         image.url = url;
+        image.thumb = thumb;
         image.width = width;
         image.height = height;
         image.uuid = uuid;
