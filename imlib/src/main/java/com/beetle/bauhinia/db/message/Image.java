@@ -55,5 +55,8 @@ public class Image extends MessageContent {
         String uuid = UUID.randomUUID().toString();
         return newImage(url, width, height, uuid);
     }
-
+    public static Image newImage(String url,String thumb, int width, int height ) {
+        String uuid = UUID.randomUUID().toString();
+        return newImage(url,thumb, width, height, uuid);
+    }
 }
