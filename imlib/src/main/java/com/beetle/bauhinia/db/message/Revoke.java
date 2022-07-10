@@ -10,6 +10,7 @@ public class Revoke extends Notification {
         JsonObject content = new JsonObject();
         JsonObject json = new JsonObject();
         json.addProperty("msgid", msgid);
+        json.addProperty("uuid", msgid);
         content.add(REVOKE, json);
 
         revoke.setRaw(content.toString());
