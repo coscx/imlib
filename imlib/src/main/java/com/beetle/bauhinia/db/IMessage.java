@@ -1,9 +1,31 @@
 package com.beetle.bauhinia.db;
 
-import com.beetle.bauhinia.db.message.*;
+import com.beetle.bauhinia.db.message.ACK;
+import com.beetle.bauhinia.db.message.Attachment;
+import com.beetle.bauhinia.db.message.Audio;
+import com.beetle.bauhinia.db.message.Classroom;
+import com.beetle.bauhinia.db.message.Conference;
+import com.beetle.bauhinia.db.message.File;
+import com.beetle.bauhinia.db.message.GroupNotification;
+import com.beetle.bauhinia.db.message.GroupVOIP;
+import com.beetle.bauhinia.db.message.Headline;
+import com.beetle.bauhinia.db.message.Image;
+import com.beetle.bauhinia.db.message.Link;
+import com.beetle.bauhinia.db.message.Location;
+import com.beetle.bauhinia.db.message.MessageContent;
+import com.beetle.bauhinia.db.message.P2PSession;
+import com.beetle.bauhinia.db.message.Readed;
+import com.beetle.bauhinia.db.message.Revoke;
+import com.beetle.bauhinia.db.message.Secret;
+import com.beetle.bauhinia.db.message.Tag;
+import com.beetle.bauhinia.db.message.Text;
+import com.beetle.bauhinia.db.message.Unknown;
+import com.beetle.bauhinia.db.message.VOIP;
+import com.beetle.bauhinia.db.message.Video;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
@@ -112,10 +134,6 @@ public class IMessage implements Cloneable {
                 content = gson.fromJson(raw, Text.class);
             } else if (element.has(MessageContent.IMAGE2)) {
                 content = gson.fromJson(element.get(MessageContent.IMAGE2), Image.class);
-            } else if (element.has(MessageContent.IMAGE)) {
-                Image image = new Image();
-                image.url = element.get(MessageContent.IMAGE).getAsString();
-                content = image;
             } else if (element.has(MessageContent.AUDIO)) {
                 content = gson.fromJson(element.get(MessageContent.AUDIO), Audio.class);
             } else if (element.has(MessageContent.NOTIFICATION)) {
@@ -150,6 +168,8 @@ public class IMessage implements Cloneable {
                 content = gson.fromJson(element.get(MessageContent.CLASSROOM), Classroom.class);
             } else if (element.has(MessageContent.TAG)) {
                 content = gson.fromJson(element.get(MessageContent.TAG), Tag.class);
+            } else if (element.has(MessageContent.CONFERENCE)) {
+                content = gson.fromJson(element.get(MessageContent.CONFERENCE), Conference.class);
             } else {
                 content = new Unknown();
             }
@@ -162,6 +182,22 @@ public class IMessage implements Cloneable {
             if (element.has("reference")) {
                 content.setReference(element.get("reference").getAsString());
             }
+            if(element.has("store_id")) {
+                content.setStoreId(element.get("store_id").getAsLong());
+            }
+            if (element.has("store_name")) {
+                content.setStoreName(element.get("store_name").getAsString());
+            }
+            if (element.has("session_id")) {
+                content.setSessionId(element.get("session_id").getAsString());
+            }
+            if (element.has("name")) {
+                content.setName(element.get("name").getAsString());
+            }
+            if (element.has("app_name")) {
+                content.setAppName(element.get("app_name").getAsString());
+            }
+
         } catch (Exception e) {
             content = new Unknown();
         }
@@ -176,6 +212,14 @@ public class IMessage implements Cloneable {
 
     public void setContent(MessageContent content) {
         this.content = content;
+    }
+
+    public long getStoreId() {
+        if (this.content != null) {
+            return this.content.getStoreId();
+        } else {
+            return 0;
+        }
     }
 
     public String getUUID() {
